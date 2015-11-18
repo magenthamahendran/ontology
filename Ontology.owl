@@ -25,13 +25,22 @@
         <Class IRI="#Actor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Art"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#City"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Country"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Dance"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drama"/>
     </Declaration>
     <Declaration>
         <Class IRI="#File"/>
@@ -44,6 +53,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Opera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Performance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Position"/>
@@ -64,13 +79,16 @@
         <ObjectProperty IRI="#composeOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isDirectedBy"/>
+        <ObjectProperty IRI="#directs"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#locatedOn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#partOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#responsibleFor"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#AccessRight"/>
@@ -100,16 +118,58 @@
         <DataProperty IRI="#lastName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#location"/>
+        <DataProperty IRI="#performanceName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#sortCode"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#theatreName"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#title"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ArtPerformance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Boulougne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cambridge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DancePerformance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DramaPerformance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manchester"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OperaPerformance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Richmond"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#TestActor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestActor1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestActor2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestActor3"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TestActress"/>
@@ -130,6 +190,9 @@
         <NamedIndividual IRI="#TestManager"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#TestManager1"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#TestPosition"/>
     </Declaration>
     <Declaration>
@@ -137,6 +200,21 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TestSubSeries"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestTheatre1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestTheatre2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestTheatre3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestTheatre4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wimbledon"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#RW/4"/>
@@ -1682,6 +1760,10 @@
         <Class IRI="#Position"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Art"/>
+        <Class IRI="#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#City"/>
         <Class IRI="#Country"/>
     </SubClassOf>
@@ -1690,8 +1772,16 @@
         <Class IRI="#Location"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Dance"/>
+        <Class IRI="#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Director"/>
         <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drama"/>
+        <Class IRI="#Performance"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#File"/>
@@ -1706,6 +1796,10 @@
         <Class IRI="#Position"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Opera"/>
+        <Class IRI="#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SubSeries"/>
         <Class IRI="#Series"/>
     </SubClassOf>
@@ -1714,8 +1808,60 @@
         <Class IRI="#City"/>
     </SubClassOf>
     <ClassAssertion>
+        <Class IRI="#Art"/>
+        <NamedIndividual IRI="#ArtPerformance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Boulougne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Cambridge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dance"/>
+        <NamedIndividual IRI="#DancePerformance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drama"/>
+        <NamedIndividual IRI="#DramaPerformance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#England"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Manchester"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Opera"/>
+        <NamedIndividual IRI="#OperaPerformance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Richmond"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Actor"/>
         <NamedIndividual IRI="#TestActor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#TestActor1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#TestActor2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#TestActor3"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Director"/>
@@ -1738,12 +1884,36 @@
         <NamedIndividual IRI="#TestManager"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#TestManager1"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Series"/>
         <NamedIndividual IRI="#TestSeries"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SubSeries"/>
         <NamedIndividual IRI="#TestSubSeries"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theatre"/>
+        <NamedIndividual IRI="#TestTheatre1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theatre"/>
+        <NamedIndividual IRI="#TestTheatre2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theatre"/>
+        <NamedIndividual IRI="#TestTheatre3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Theatre"/>
+        <NamedIndividual IRI="#TestTheatre4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Wimbledon"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Series"/>
@@ -3798,49 +3968,189 @@
         <NamedIndividual IRI="#RW/4/7/8"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composeOf"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <NamedIndividual IRI="#TestItem"/>
+        <ObjectProperty IRI="#appearsOn"/>
+        <NamedIndividual IRI="#ArtPerformance"/>
+        <NamedIndividual IRI="#TestTheatre1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#partOf"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <NamedIndividual IRI="#TestSeries"/>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#Boulougne"/>
+        <NamedIndividual IRI="#France"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#partOf"/>
-        <NamedIndividual IRI="#TestFile2"/>
-        <NamedIndividual IRI="#TestSeries"/>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#Cambridge"/>
+        <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#partOf"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <NamedIndividual IRI="#TestFile"/>
+        <ObjectProperty IRI="#appearsOn"/>
+        <NamedIndividual IRI="#DancePerformance"/>
+        <NamedIndividual IRI="#TestTheatre2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composeOf"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <NamedIndividual IRI="#TestFile"/>
+        <ObjectProperty IRI="#appearsOn"/>
+        <NamedIndividual IRI="#DramaPerformance"/>
+        <NamedIndividual IRI="#TestTheatre3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composeOf"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <NamedIndividual IRI="#TestFile2"/>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#Manchester"/>
+        <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#partOf"/>
-        <NamedIndividual IRI="#RW/4/1"/>
-        <NamedIndividual IRI="#RW/4"/>
+        <ObjectProperty IRI="#appearsOn"/>
+        <NamedIndividual IRI="#OperaPerformance"/>
+        <NamedIndividual IRI="#TestTheatre4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#partOf"/>
-        <NamedIndividual IRI="#RW/4/1/1"/>
-        <NamedIndividual IRI="#RW/4/1"/>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#Richmond"/>
+        <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDirectedBy"/>
-        <NamedIndividual IRI="#RW/4/1/1/1"/>
+        <ObjectProperty IRI="#appearsOn"/>
+        <NamedIndividual IRI="#TestActor"/>
+        <NamedIndividual IRI="#DancePerformance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appearsOn"/>
+        <NamedIndividual IRI="#TestActor1"/>
+        <NamedIndividual IRI="#DramaPerformance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appearsOn"/>
+        <NamedIndividual IRI="#TestActor2"/>
+        <NamedIndividual IRI="#ArtPerformance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appearsOn"/>
+        <NamedIndividual IRI="#TestActor3"/>
+        <NamedIndividual IRI="#OperaPerformance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#directs"/>
         <NamedIndividual IRI="#TestDirector"/>
+        <NamedIndividual IRI="#DancePerformance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#directs"/>
+        <NamedIndividual IRI="#TestDirector"/>
+        <NamedIndividual IRI="#ArtPerformance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#directs"/>
+        <NamedIndividual IRI="#TestDirector"/>
+        <NamedIndividual IRI="#DramaPerformance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#directs"/>
+        <NamedIndividual IRI="#TestDirector"/>
+        <NamedIndividual IRI="#OperaPerformance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composeOf"/>
+        <NamedIndividual IRI="#TestFile"/>
+        <NamedIndividual IRI="#TestItem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOf"/>
+        <NamedIndividual IRI="#TestFile"/>
+        <NamedIndividual IRI="#TestSeries"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOf"/>
+        <NamedIndividual IRI="#TestFile2"/>
+        <NamedIndividual IRI="#TestSeries"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOf"/>
+        <NamedIndividual IRI="#TestItem"/>
+        <NamedIndividual IRI="#TestFile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#responsibleFor"/>
+        <NamedIndividual IRI="#TestManager"/>
+        <NamedIndividual IRI="#TestTheatre1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#responsibleFor"/>
+        <NamedIndividual IRI="#TestManager"/>
+        <NamedIndividual IRI="#TestTheatre2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#responsibleFor"/>
+        <NamedIndividual IRI="#TestManager1"/>
+        <NamedIndividual IRI="#TestTheatre3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#responsibleFor"/>
+        <NamedIndividual IRI="#TestManager1"/>
+        <NamedIndividual IRI="#TestTheatre4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composeOf"/>
+        <NamedIndividual IRI="#TestSubSeries"/>
+        <NamedIndividual IRI="#TestFile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composeOf"/>
+        <NamedIndividual IRI="#TestSubSeries"/>
+        <NamedIndividual IRI="#TestFile2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#TestTheatre1"/>
+        <NamedIndividual IRI="#Boulougne"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#TestTheatre1"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#TestTheatre2"/>
+        <NamedIndividual IRI="#Wimbledon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#TestTheatre2"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#TestTheatre3"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#TestTheatre3"/>
+        <NamedIndividual IRI="#Cambridge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#TestTheatre4"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#TestTheatre4"/>
+        <NamedIndividual IRI="#Manchester"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedOn"/>
+        <NamedIndividual IRI="#Wimbledon"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOf"/>
+        <NamedIndividual IRI="#RW/4/1"/>
+        <NamedIndividual IRI="#RW/4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOf"/>
+        <NamedIndividual IRI="#RW/4/1/1"/>
+        <NamedIndividual IRI="#RW/4/1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#partOf"/>
@@ -6392,6 +6702,26 @@
         <NamedIndividual IRI="#RW/4/7/8"/>
         <NamedIndividual IRI="#RW/4/7"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#performanceName"/>
+        <NamedIndividual IRI="#ArtPerformance"/>
+        <Literal datatypeIRI="&xsd;string">The School for Scandal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#performanceName"/>
+        <NamedIndividual IRI="#DancePerformance"/>
+        <Literal datatypeIRI="&xsd;string">The Royal Ballet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#performanceName"/>
+        <NamedIndividual IRI="#DramaPerformance"/>
+        <Literal datatypeIRI="&xsd;string">Comedy of Errors</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#performanceName"/>
+        <NamedIndividual IRI="#OperaPerformance"/>
+        <Literal datatypeIRI="&xsd;string">Voice</Literal>
+    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#firstName"/>
         <NamedIndividual IRI="#TestActor"/>
@@ -6401,6 +6731,36 @@
         <DataProperty IRI="#lastName"/>
         <NamedIndividual IRI="#TestActor"/>
         <Literal datatypeIRI="&xsd;string">Achurch</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#TestActor1"/>
+        <Literal datatypeIRI="&xsd;string">Norman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#TestActor1"/>
+        <Literal datatypeIRI="&xsd;string">McKinnel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#TestActor2"/>
+        <Literal datatypeIRI="&xsd;string">Arthur</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#TestActor2"/>
+        <Literal datatypeIRI="&xsd;string">Paul</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#TestActor3"/>
+        <Literal datatypeIRI="&xsd;string">George</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#TestActor3"/>
+        <Literal datatypeIRI="&xsd;string">J. Vining</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#firstName"/>
@@ -6523,6 +6883,16 @@
         <Literal datatypeIRI="&xsd;string">Stirling</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#TestManager1"/>
+        <Literal datatypeIRI="&xsd;string">Jean</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#TestManager1"/>
+        <Literal datatypeIRI="&xsd;string">Vilar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#title"/>
         <NamedIndividual IRI="#TestPosition"/>
         <Literal datatypeIRI="&xsd;string">Romeo and Juliet</Literal>
@@ -6616,6 +6986,26 @@
         <DataProperty IRI="#title"/>
         <NamedIndividual IRI="#TestSubSeries"/>
         <Literal datatypeIRI="&xsd;string">London theatres, playbills and posters</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#theatreName"/>
+        <NamedIndividual IRI="#TestTheatre1"/>
+        <Literal datatypeIRI="&xsd;string">English Theatre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#theatreName"/>
+        <NamedIndividual IRI="#TestTheatre2"/>
+        <Literal datatypeIRI="&xsd;string">Wimbledon Theatre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#theatreName"/>
+        <NamedIndividual IRI="#TestTheatre3"/>
+        <Literal datatypeIRI="&xsd;string">Kings Theatre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#theatreName"/>
+        <NamedIndividual IRI="#TestTheatre4"/>
+        <Literal datatypeIRI="&xsd;string">RoyalTheatre</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#AccessRight"/>
@@ -29702,17 +30092,10 @@
         <NamedIndividual IRI="#RW/4/7/8"/>
         <Literal datatypeIRI="&xsd;string">Theatre Royal Bath souvenir silk playbill for &apos;A Midsummer Night&apos;s Dream&apos;</Literal>
     </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isDirectedBy"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#partOf"/>
         <ObjectProperty IRI="#composeOf"/>
     </InverseObjectProperties>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#locatedOn"/>
-    </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#partOf"/>
     </FunctionalObjectProperty>
@@ -29728,8 +30111,8 @@
         <Class IRI="#File"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isDirectedBy"/>
-        <Class IRI="#Series"/>
+        <ObjectProperty IRI="#directs"/>
+        <Class IRI="#Director"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#locatedOn"/>
@@ -29739,6 +30122,14 @@
         <ObjectProperty IRI="#partOf"/>
         <Class IRI="#Item"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#responsibleFor"/>
+        <Class IRI="#Manager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appearsOn"/>
+        <Class IRI="#Performance"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#appearsOn"/>
         <Class IRI="#Series"/>
@@ -29748,8 +30139,8 @@
         <Class IRI="#Item"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isDirectedBy"/>
-        <Class IRI="#Director"/>
+        <ObjectProperty IRI="#directs"/>
+        <Class IRI="#Performance"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#locatedOn"/>
@@ -29759,9 +30150,61 @@
         <ObjectProperty IRI="#partOf"/>
         <Class IRI="#File"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#responsibleFor"/>
+        <Class IRI="#Theatre"/>
+    </ObjectPropertyRange>
     <FunctionalDataProperty>
         <DataProperty IRI="#sortCode"/>
     </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AccessRight"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ArchiveName"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CopyRight"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Date"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Extent"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RefNo"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#firstName"/>
+        <Class IRI="#Position"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lastName"/>
+        <Class IRI="#Position"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#performanceName"/>
+        <Class IRI="#Performance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sortCode"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#theatreName"/>
+        <Class IRI="#Theatre"/>
+    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#title"/>
         <Class IRI="#File"/>
@@ -29795,7 +30238,23 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#firstName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#performanceName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#sortCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#theatreName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
