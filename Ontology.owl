@@ -88,6 +88,9 @@
         <ObjectProperty IRI="#partOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#performedAt"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#responsibleFor"/>
     </Declaration>
     <Declaration>
@@ -178,15 +181,6 @@
         <NamedIndividual IRI="#TestDirector"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TestFile"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#TestFile2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#TestItem"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#TestManager"/>
     </Declaration>
     <Declaration>
@@ -194,12 +188,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TestPosition"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#TestSeries"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#TestSubSeries"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TestTheatre1"/>
@@ -1868,32 +1856,12 @@
         <NamedIndividual IRI="#TestDirector"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#File"/>
-        <NamedIndividual IRI="#TestFile"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#File"/>
-        <NamedIndividual IRI="#TestFile2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Item"/>
-        <NamedIndividual IRI="#TestItem"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Manager"/>
         <NamedIndividual IRI="#TestManager"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Manager"/>
         <NamedIndividual IRI="#TestManager1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Series"/>
-        <NamedIndividual IRI="#TestSeries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SubSeries"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Theatre"/>
@@ -3968,7 +3936,7 @@
         <NamedIndividual IRI="#RW/4/7/8"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsOn"/>
+        <ObjectProperty IRI="#performedAt"/>
         <NamedIndividual IRI="#ArtPerformance"/>
         <NamedIndividual IRI="#TestTheatre1"/>
     </ObjectPropertyAssertion>
@@ -3983,12 +3951,12 @@
         <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsOn"/>
+        <ObjectProperty IRI="#performedAt"/>
         <NamedIndividual IRI="#DancePerformance"/>
         <NamedIndividual IRI="#TestTheatre2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsOn"/>
+        <ObjectProperty IRI="#performedAt"/>
         <NamedIndividual IRI="#DramaPerformance"/>
         <NamedIndividual IRI="#TestTheatre3"/>
     </ObjectPropertyAssertion>
@@ -3998,7 +3966,7 @@
         <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#appearsOn"/>
+        <ObjectProperty IRI="#performedAt"/>
         <NamedIndividual IRI="#OperaPerformance"/>
         <NamedIndividual IRI="#TestTheatre4"/>
     </ObjectPropertyAssertion>
@@ -4015,12 +3983,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#appearsOn"/>
         <NamedIndividual IRI="#TestActor1"/>
-        <NamedIndividual IRI="#DramaPerformance"/>
+        <NamedIndividual IRI="#DancePerformance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#appearsOn"/>
         <NamedIndividual IRI="#TestActor2"/>
-        <NamedIndividual IRI="#ArtPerformance"/>
+        <NamedIndividual IRI="#DramaPerformance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#appearsOn"/>
@@ -4048,26 +4016,6 @@
         <NamedIndividual IRI="#OperaPerformance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composeOf"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <NamedIndividual IRI="#TestItem"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#partOf"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <NamedIndividual IRI="#TestSeries"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#partOf"/>
-        <NamedIndividual IRI="#TestFile2"/>
-        <NamedIndividual IRI="#TestSeries"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#partOf"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <NamedIndividual IRI="#TestFile"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#responsibleFor"/>
         <NamedIndividual IRI="#TestManager"/>
         <NamedIndividual IRI="#TestTheatre1"/>
@@ -4086,16 +4034,6 @@
         <ObjectProperty IRI="#responsibleFor"/>
         <NamedIndividual IRI="#TestManager1"/>
         <NamedIndividual IRI="#TestTheatre4"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composeOf"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <NamedIndividual IRI="#TestFile"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composeOf"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <NamedIndividual IRI="#TestFile2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#locatedOn"/>
@@ -6783,96 +6721,6 @@
         <Literal datatypeIRI="&xsd;string">Joseph Talma</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#AccessRight"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <Literal datatypeIRI="&xsd;string">All records are open subject to the terms of the Freedom of Information Act 2000.  All records containing personal information about individuals are subject to the terms of the Data Protection Act 1998.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#ArchiveName"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <Literal datatypeIRI="&xsd;string">Royal Holloway, University of London Archives (GBR/505)</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#CopyRight"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <Literal datatypeIRI="&xsd;string">Copies, subject to the condition of the original, may be supplied for research use only.  Requests to publish original material should be submitted to the College Archivist</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <Literal datatypeIRI="&xsd;string">1851-1864</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Description"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <Literal datatypeIRI="&xsd;string">Playbills advertising performances at the Theatre Royal, Edinburgh.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Extent"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <Literal datatypeIRI="&xsd;string">1 item</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#RefNo"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <Literal datatypeIRI="&xsd;string">RW/4/2/27</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#sortCode"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <Literal datatypeIRI="&xsd;string">RW/4/2/27</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#title"/>
-        <NamedIndividual IRI="#TestFile"/>
-        <Literal datatypeIRI="&xsd;string">Theatre Royal, Edinburgh playbills</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#AccessRight"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <Literal datatypeIRI="&xsd;string">All records are open subject to the terms of the Freedom of Information Act 2000.  All records containing personal information about individuals are subject to the terms of the Data Protection Act 1998.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#ArchiveName"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <Literal datatypeIRI="&xsd;string">Royal Holloway, University of London Archives (GBR/505)</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#CopyRight"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <Literal datatypeIRI="&xsd;string">Copies, subject to the condition of the original, may be supplied for research use only.  Requests to publish original material should be submitted to the College Archivist</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <Literal datatypeIRI="&xsd;string">[c.1899]</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Description"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <Literal datatypeIRI="&xsd;string">A chromolithograph (colour lithograph) poster advertising Bostock and Wombell&apos;s &apos;World Renowned Menagerie&apos;. The poster is illustrated with a circus tent and crowds and a camel and elephant being ridden by visitors, with brief details of opening times, performance times and the name of the proprietor and manager, H. Bostock. The four corners of the poster are decorated with images of animal tamers in performance.\r\n\r\nThe poster also features a promotional statement noted the date the circus was established as 1805. The poster was printed by Sam Lithgow, Glasgow.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Extent"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <Literal datatypeIRI="&xsd;string">1 item</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#RefNo"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <Literal datatypeIRI="&xsd;string">RW/4/4/1/1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#sortCode"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <Literal datatypeIRI="&xsd;string">RW/4/4/1/1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#title"/>
-        <NamedIndividual IRI="#TestItem"/>
-        <Literal datatypeIRI="&xsd;string">Bostock and Wombell&apos;s &apos;World Renowned Menagerie&apos; poster</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#firstName"/>
         <NamedIndividual IRI="#TestManager"/>
         <Literal datatypeIRI="&xsd;string">Louisa</Literal>
@@ -6896,96 +6744,6 @@
         <DataProperty IRI="#title"/>
         <NamedIndividual IRI="#TestPosition"/>
         <Literal datatypeIRI="&xsd;string">Romeo and Juliet</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#AccessRight"/>
-        <NamedIndividual IRI="#TestSeries"/>
-        <Literal datatypeIRI="&xsd;string">All records are open subject to the terms of the Freedom of Information Act 2000.  All records containing personal information about individuals are subject to the terms of the Data Protection Act 1998.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#ArchiveName"/>
-        <NamedIndividual IRI="#TestSeries"/>
-        <Literal datatypeIRI="&xsd;string">Royal Holloway, University of London Archives (GBR/505)</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#CopyRight"/>
-        <NamedIndividual IRI="#TestSeries"/>
-        <Literal datatypeIRI="&xsd;string">Copies, subject to the condition of the original, may be supplied for research use only.  Requests to publish original material should be submitted to the College Archivist</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date"/>
-        <NamedIndividual IRI="#TestSeries"/>
-        <Literal datatypeIRI="&xsd;string">18th-21st century</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Description"/>
-        <NamedIndividual IRI="#TestSeries"/>
-        <Literal datatypeIRI="&xsd;string">Contains playbills and posters advertising theatrical and variety performances, primarily issued by London theatres such as the Theatre Royal, Covent Garden [Royal Opera House] and Theatre Royal, Drury Lane, with a smaller number of items promoting performances at regional or foreign theatres such as the Argyle Theatre of Varieties, Birkenhead and the English Theatre in Calais, France. Also includes material produced by travelling theatre companies and circuses.\r\n\r\nIn addition, the series contains posters advertising films with the theme of children or teaching as well as posters with a broader theatrical theme or subject, such as a poster depicting Dick Whittington printed by David Allen &amp; Sons Limited.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Extent"/>
-        <NamedIndividual IRI="#TestSeries"/>
-        <Literal datatypeIRI="&xsd;string">2 boxes + framed and oversize items (451 items)</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#RefNo"/>
-        <NamedIndividual IRI="#TestSeries"/>
-        <Literal datatypeIRI="&xsd;string">RW/4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#sortCode"/>
-        <NamedIndividual IRI="#TestSeries"/>
-        <Literal datatypeIRI="&xsd;string">RW/4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#title"/>
-        <NamedIndividual IRI="#TestSeries"/>
-        <Literal datatypeIRI="&xsd;string">Playbills and posters</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#AccessRight"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <Literal datatypeIRI="&xsd;string">All records are open subject to the terms of the Freedom of Information Act 2000.  All records containing personal information about individuals are subject to the terms of the Data Protection Act 1998.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#ArchiveName"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <Literal datatypeIRI="&xsd;string">Royal Holloway, University of London Archives (GBR/505)</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#CopyRight"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <Literal datatypeIRI="&xsd;string">Copies, subject to the condition of the original, may be supplied for research use only.  Requests to publish original material should be submitted to the College Archivist</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Date"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <Literal datatypeIRI="&xsd;string">18th-20th century</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Description"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <Literal datatypeIRI="&xsd;string">Contains playbills and posters issued by London based theatres to promote their programmes of performances. The material ranges in form from the text based playbills of the late eighteenth and nineteenth centuries to the increasingly pictorial and colourful poster advertisements produced from the twentieth century onwards.\r\n\r\nAlso contains printed material issued in relation to performances such as notices to the public.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Extent"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <Literal datatypeIRI="&xsd;string">344 items</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#RefNo"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <Literal datatypeIRI="&xsd;string">RW/4/1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#sortCode"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <Literal datatypeIRI="&xsd;string">RW/4/1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#title"/>
-        <NamedIndividual IRI="#TestSubSeries"/>
-        <Literal datatypeIRI="&xsd;string">London theatres, playbills and posters</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#theatreName"/>
@@ -30092,6 +29850,10 @@
         <NamedIndividual IRI="#RW/4/7/8"/>
         <Literal datatypeIRI="&xsd;string">Theatre Royal Bath souvenir silk playbill for &apos;A Midsummer Night&apos;s Dream&apos;</Literal>
     </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#performedAt"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#partOf"/>
         <ObjectProperty IRI="#composeOf"/>
@@ -30102,6 +29864,15 @@
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#composeOf"/>
     </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#directs"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#responsibleFor"/>
+    </InverseFunctionalObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#locatedOn"/>
+    </ReflexiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#appearsOn"/>
         <Class IRI="#Actor"/>
@@ -30116,11 +29887,15 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#locatedOn"/>
-        <Class IRI="#Series"/>
+        <Class IRI="#Location"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#partOf"/>
         <Class IRI="#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performedAt"/>
+        <Class IRI="#Performance"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#responsibleFor"/>
@@ -30149,6 +29924,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#partOf"/>
         <Class IRI="#File"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performedAt"/>
+        <Class IRI="#Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#responsibleFor"/>
